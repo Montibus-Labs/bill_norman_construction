@@ -16,7 +16,7 @@ function LandingPage() {
 
   const pageStyle = {
     backgroundImage:
-      "url(https://images.pexels.com/photos/113338/pexels-photo-113338.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)",
+    "url(https://burst.shopifycdn.com/photos/house-in-trees.jpg?width=1850&format=pjpg&exif=0&iptc=0)",
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
@@ -26,7 +26,7 @@ function LandingPage() {
   }
 
   const welcomeStyle = {
-    letterSpacing: "0.25em",
+    // letterSpacing: "0.25em",
   }
 
   return (
@@ -34,15 +34,15 @@ function LandingPage() {
       <div className="container">
         <Navbar />
         <div className="centerItems">
-          <h6 style={welcomeStyle}>{welcomeText}</h6>
-          <h1>{landingText}</h1>
+          <h1 style={welcomeStyle}>{welcomeText}</h1>
+          <h4>{landingText}</h4>
           <button
             style={{
               width: "200px",
               padding: "10px",
               border: "none",
               boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
-              background: "#FFA800",
+              background: "red",
               borderRadius: "30px",
               textTransform: "uppercase",
               color : "white",
@@ -50,7 +50,7 @@ function LandingPage() {
               marginTop : "20px"
             }}
           >
-            Start a Project
+            Contact Us
           </button>
         </div>
       </div>

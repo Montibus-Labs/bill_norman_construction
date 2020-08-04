@@ -3,7 +3,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 function Navbar() {
   const textStyle = {
-    color: "#FFA800",
+    color: "white",
     fontWeight: "600",
     letterSpacing: "0.1em",
   }
@@ -23,15 +23,15 @@ function Navbar() {
               </AnchorLink>
             </li>
             <li class="nav-item">
-              <AnchorLink class="nav-link" href="#team">
-                Team
+              <AnchorLink class="nav-link" href="#contact">
+                Contact
               </AnchorLink>
             </li>
           </ul>
         </div>
       </div>
       <nav className="navbar navbar-dark">
-        <h4 style={textStyle}>KRISP</h4>
+        <h4 style={textStyle}>Bill Norman Construction, Inc.</h4>
         <button
           className="navbar-toggler"
           type="button"
