@@ -2,6 +2,7 @@ import React from "react"
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone } from '@fortawesome/free-solid-svg-icons'
+import { SocialIcon } from "react-social-icons"
 
 function Navbar() {
   const companyNametextStyle = {
@@ -41,6 +42,8 @@ function Navbar() {
       </div>
       <nav className="navbar navbar-dark">
         <h4 style={companyNametextStyle}>Bill Norman Construction, Inc.</h4>
+        <SocialIcon className="mr-4" url={"http://facebook.com/"} />
+        <SocialIcon className="mr-4" url={"http://pinterest.com/"} />
         <div>
           <FontAwesomeIcon icon={faPhone} size="1x" />
           <a href="tel:336-325-8203" style={phoneNumberStyle}>(336) 325-8203</a>
