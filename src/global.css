@@ -32,21 +32,13 @@ section {
 .inputBox{
   width: 100%;
   background-color: white;
-  border: none;
+  /* border: none; */
   border-radius: 10px;
   padding: 20px;
-  text-decoration-color: white;
+  text-decoration-color: gray;
   color: black;
 }
 
 textarea:focus{
   animation: none !important
-}
-
-footer{
-  color: #B9A4DE
-}
-
-footer a {
-  color: white
 }
