@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone } from '@fortawesome/free-solid-svg-icons'
@@ -17,25 +18,38 @@ function Navbar() {
     marginLeft: "0.5em"
   }
 
+  const navItemStyle = {
+    color: "white",
+    fontWeight: "400",
+    fontSize: "1.5em",
+  }
+
+
+
   return (
     <div className="pos-f-t">
       <div className="collapse" id="navbarToggleExternalContent">
-        <div className="bg-light   p-4">
+        <div className="p-4">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <AnchorLink class="nav-link" href="#">
+              <AnchorLink class="nav-link" href="#" style={navItemStyle}>
                 Home <span class="sr-only">(current)</span>
               </AnchorLink>
             </li>
             <li class="nav-item">
-              <AnchorLink class="nav-link" href="#services">
+              <AnchorLink class="nav-link" href="#services" style={navItemStyle}>
                 Services
               </AnchorLink>
             </li>
             <li class="nav-item">
-              <AnchorLink class="nav-link" href="#contact">
+              <AnchorLink class="nav-link" href="#contact" style={navItemStyle}>
                 Contact
               </AnchorLink>
+            </li>
+            <li class="nav-item">
+              <Link class="nav-link" href="/work" style={navItemStyle}>
+                Our Work
+              </Link>
             </li>
           </ul>
         </div>

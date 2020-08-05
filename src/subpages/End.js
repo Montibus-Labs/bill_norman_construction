@@ -13,7 +13,7 @@ const contactButtonStyles = {
 
 export default function End() {
   return (
-    <div className="container-fluid">
+    <div className="container-fluid" id="contact">
       <div className="container">
         <div className="flexbox">
           <h1 className="text-center my-5">Stay in touch</h1>
