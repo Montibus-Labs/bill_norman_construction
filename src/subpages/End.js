@@ -1,6 +1,16 @@
 import React from "react"
 import Fade from "react-reveal/Fade"
 
+const contactButtonStyles = {
+  background: 'red',
+  color: 'white',
+  border: 'none',
+  boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)',
+  borderRadius: '30px',
+  textTransform: 'uppercase',
+  fontWeight : '600',
+}
+
 export default function End() {
   return (
     <div
@@ -28,7 +38,7 @@ export default function End() {
               </div>
             </div>
             <textarea rows = "2" className="inputBox mb-4" placeholder="Your Message" />
-            <button className="btn btn-light mb-4 py-3">
+            <button className="btn mb-4 py-3" style={{ backgroundColor: 'red', color: 'white' }}>
               Submit
             </button>
           </Fade>
