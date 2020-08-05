@@ -18,32 +18,40 @@ function Services() {
     }
   `)
   return (
-    <div id = "services" className="container-fluid" style={{ backgroundColor: "gray" }}>
+    <div id = "services" className="container-fluid" style={{ backgroundColor: "white" }}>
       <div className="container">
         <div className="flexbox">
-          <h1 className="text-center my-5" style={{ color: "white" }}>Services We Offer </h1>
+          <h1 className="text-center my-5" style={{ color: "black" }}>Services We Offer </h1>
           <div className="row">
             {/* {allServicesYaml.edges.map(({ node }) => { */}
             {/*   return <ServiceItem title={node.title} src={node.src} /> */}
             {/* })} */}
             <div className="col-lg-3 my-4 col-sm-12 text-center">
-              <FontAwesomeIcon icon={faHome} size="8x" color="white" />
-              <h3 className="mt-5" style={{ color: "white" }}>New Construction</h3>
+              <Link to="/work">
+                <FontAwesomeIcon icon={faHome} size="8x" color="black" />
+                <h3 className="mt-5" style={{ color: "black" }}>New Construction</h3>
+              </Link>
             </div>
             <div className="col-lg-3 my-4 col-sm-12 text-center">
-              <FontAwesomeIcon icon={faPaintRoller} size="8x" color="white"/>
-              <h3 className="mt-5" style={{ color: "white" }}>Remodels</h3>
+              <Link to="/work">
+                <FontAwesomeIcon icon={faPaintRoller} size="8x" color="black"/>
+                <h3 className="mt-5" style={{ color: "black" }}>Remodels</h3>
+              </Link>
             </div>
             <div className="col-lg-3 my-4 col-sm-12 text-center">
-              <FontAwesomeIcon icon={faTools} size="8x" color="white"/>
-              <h3 className="mt-5" style={{ color: "white" }}>Additions</h3>
+              <Link to="/work">
+                <FontAwesomeIcon icon={faTools} size="8x" color="black"/>
+                <h3 className="mt-5" style={{ color: "black" }}>Additions</h3>
+              </Link>
             </div>
             <div className="col-lg-3 my-4 col-sm-12 text-center">
-              <FontAwesomeIcon icon={faTint} size="8x" color="white"/>
-              <h3 className="mt-5" style={{ color: "white" }}>Roofing</h3>
+              <Link to="/work">
+                <FontAwesomeIcon icon={faTint} size="8x" color="black"/>
+                <h3 className="mt-5" style={{ color: "black" }}>Roofing</h3>
+              </Link>
             </div>
           </div>
-          <h4 className="text-center my-4"><Link to="/work" style={{ color: "white" }} >See Our Work</Link></h4>
+          <h4 className="text-center my-4"><Link to="/work" style={{ color: "black" }} >See Our Work</Link></h4>
         </div>
       </div>
     </div>
