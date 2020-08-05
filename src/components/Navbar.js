@@ -1,12 +1,21 @@
 import React from "react"
 import AnchorLink from 'react-anchor-link-smooth-scroll'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPhone } from '@fortawesome/free-solid-svg-icons'
 
 function Navbar() {
-  const textStyle = {
+  const companyNametextStyle = {
     color: "white",
     fontWeight: "600",
     letterSpacing: "0.1em",
   }
+
+  const phoneNumberStyle = {
+    color: "white",
+    fontWeight: "400",
+    marginLeft: "0.5em"
+  }
+
   return (
     <div className="pos-f-t">
       <div className="collapse" id="navbarToggleExternalContent">
@@ -31,7 +40,11 @@ function Navbar() {
         </div>
       </div>
       <nav className="navbar navbar-dark">
-        <h4 style={textStyle}>Bill Norman Construction, Inc.</h4>
+        <h4 style={companyNametextStyle}>Bill Norman Construction, Inc.</h4>
+        <div>
+          <FontAwesomeIcon icon={faPhone} size="1x" />
+          <a href="tel:336-325-8203" style={phoneNumberStyle}>(336) 325-8203</a>
+        </div>
         <button
           className="navbar-toggler"
           type="button"
