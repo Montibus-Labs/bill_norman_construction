@@ -1,6 +1,6 @@
 import React from "react"
 import ServiceItem from "../components/ServiceItem"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faHome, faPaintRoller, faTools, faTint } from "@fortawesome/free-solid-svg-icons"
 
@@ -43,6 +43,7 @@ function Services() {
               <h3 className="mt-5">Roofing</h3>
             </div>
           </div>
+          <h4 className="text-center my-4"><Link to="/work" style={{ color: "black" }} >Our Work</Link></h4>
         </div>
       </div>
     </div>
