@@ -16,7 +16,7 @@ function Services() {
     }
   `)
   return (
-    <div id = "services" className="container-fluid" style={{ backgroundColor: "#FFCD6C" }}>
+    <div id = "services" className="container-fluid" style={{ backgroundColor: "lightgray" }}>
       <div className="container">
         <div className="flexbox">
           <h1 className="text-center my-5">Services We Offer </h1>
