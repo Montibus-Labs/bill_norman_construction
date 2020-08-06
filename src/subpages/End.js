@@ -16,27 +16,33 @@ export default function End() {
     <div className="container-fluid" id="contact">
       <div className="container">
         <div className="flexbox">
-          <h1 className="text-center my-5">Stay in touch</h1>
-          <div className="row my-4">
-            <div className="col-lg-6 mb-4">
-              <input
-                type="name"
-                className="inputBox"
-                placeholder="Your Name"
-              />
-            </div>
-            <div className="col-lg-6 mb-4">
-              <input
-                type="email"
-                className="inputBox"
-                placeholder="Your Email"
-              />
-            </div>
-          </div>
-          <textarea rows = "2" className="inputBox mb-4" placeholder="Your Message" />
-          <button className="btn mb-4 py-3" style={{ backgroundColor: 'red', color: 'white' }}>
-            Submit
-          </button>
+          <Fade left>
+            <h1 className="text-center my-5">Let Us Help With Your Next Project!</h1>
+            <form method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact" id="contact">
+              <input type="hidden" name="bot-field" />
+              <input type="hidden" name="form-name" value="contact"/>
+              <div className="row my-4">
+                <div className="col-lg-6 mb-4">
+                  <input
+                    type="name"
+                    className="inputBox"
+                    placeholder="Your Name"
+                  />
+                </div>
+                <div className="col-lg-6 mb-4">
+                  <input
+                    type="email"
+                    className="inputBox"
+                    placeholder="Your Email"
+                  />
+                </div>
+              </div>
+              <textarea rows = "2" className="inputBox mb-4" placeholder="Your Message" />
+              <button className="btn mb-4 py-3 submitButton">
+                Submit
+              </button>
+            </form>
+          </Fade>
         </div>
       </div>
     </div>
