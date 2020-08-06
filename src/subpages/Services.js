@@ -43,8 +43,23 @@ function Services() {
               <h3 className="mt-5" style={{ color: "black" }}>Roofing</h3>
             </div>
           </div>
-          <Link class="text-center" target="_blank" href="https://www.facebook.com/pg/bnconstruct/photos/" style={{ fontWeight: "400", color: "black", fontSize: "1.5em" }}>
-            See Our Work
+          <Link class="text-center" target="_blank" href="https://www.facebook.com/pg/bnconstruct/photos/"> 
+            <button
+              style={{
+                width: "200px",
+                padding: "10px",
+                border: "none",
+                boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
+                background: "red",
+                borderRadius: "30px",
+                textTransform: "uppercase",
+                color : "white",
+                fontWeight : "600",
+                marginTop : "20px"
+              }}
+            >
+              See Our Work
+            </button>
           </Link>
         </div>
       </div>
