@@ -31,11 +31,6 @@ function Navbar() {
       <div className="collapse" id="navbarToggleExternalContent">
         <div className="p-4">
           <ul class="navbar-nav">
-            <li class="nav-item active">
-              <AnchorLink class="nav-link" href="#" style={navItemStyle}>
-                Home <span class="sr-only">(current)</span>
-              </AnchorLink>
-            </li>
             <li class="nav-item">
               <AnchorLink class="nav-link" href="#services" style={navItemStyle}>
                 Services
@@ -47,7 +42,7 @@ function Navbar() {
               </AnchorLink>
             </li>
             <li class="nav-item">
-              <Link class="nav-link" href="/work" style={navItemStyle}>
+              <Link class="nav-link" target="_blank" href="https://www.facebook.com/pg/bnconstruct/photos/" style={navItemStyle}>
                 Our Work
               </Link>
             </li>
