@@ -1,45 +1,25 @@
 import React from "react"
 import { SocialIcon } from "react-social-icons"
 
+const currentYear = new Date().getFullYear()
+
+
 function Footer() {
+  console.log(currentYear)
   return (
     <div>
-      <footer className="py-2" style={{ backgroundColor: "#5E35B1" }}>
+      <footer className="py-2">
         <div className="container">
-          <p className="float-right">Krisp | © Copyright 2019</p>
-          <p>
-            Design Inspired from{" "}
-            <a href="https://graphicburger.com/cuda-single-page-portfolio-template/">
-              Cuda
-            </a>
+          <p className="float-right">Bill Norman Construction, Inc. © Copyright { currentYear }</p>
+          <SocialIcon className="mr-4" url={"http://facebook.com/"} />
+          <SocialIcon className="mr-4" url={"http://pinterest.com/"} />
+          <p style={{ marginTop: "1em" }}>
+            234 Storm Haven Ln
+            <br/>
+            Mt. Airy, NC 27030
+            <br />
+            <a href="tel:3367867354" style={{ color: "black" }} >(336) 786-7354</a>
           </p>
-          <div className="freepik">
-            Icons made by{" "}
-            <a
-              href="https://www.freepik.com/?__hstc=57440181.5efde453cddf611e3269badc0f78e347.1563446622471.1563446622471.1563458509765.2&__hssc=57440181.1.1563458509765&__hsfp=226280184"
-              title="Freepik"
-            >
-              Freepik
-            </a>{" "}
-            from{" "}
-            <a href="https://www.flaticon.com/" title="Flaticon">
-              www.flaticon.com
-            </a>{" "}
-            is licensed by{" "}
-            <a
-              href="http://creativecommons.org/licenses/by/3.0/"
-              title="Creative Commons BY 3.0"
-              target="_blank"
-            >
-              CC 3.0 BY
-            </a>
-            <br />
-            <br />
-          </div>
-          <h6>
-            Created and Presented by{" "}
-            <a href="http://github.com/mohanmonu777">Mohan</a>
-          </h6>
         </div>
       </footer>
     </div>

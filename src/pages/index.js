@@ -13,6 +13,7 @@ function Index() {
       <Services/>
       <Team/>
       <End/>
+      <Footer />
     </div>
   )
 }
