@@ -56,11 +56,9 @@ function Navbar() {
       </div>
       <nav className="navbar navbar-dark">
         <h4 style={companyNametextStyle}>Bill Norman Construction, Inc.</h4>
-        <SocialIcon className="mr-4" url={"http://facebook.com/"} />
-        <SocialIcon className="mr-4" url={"http://pinterest.com/"} />
         <div>
           <FontAwesomeIcon icon={faPhone} size="1x" />
-          <a href="tel:336-325-8203" style={phoneNumberStyle}>(336) 325-8203</a>
+          <a href="tel:3367867354" style={phoneNumberStyle}>(336) 786-7354</a>
         </div>
         <button
           className="navbar-toggler"
