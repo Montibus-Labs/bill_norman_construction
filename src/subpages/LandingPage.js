@@ -1,6 +1,7 @@
 import React from "react"
 import Navbar from "../components/Navbar"
 import { useStaticQuery, graphql, Link } from "gatsby"
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 function LandingPage() {
   const { pageDataYaml } = useStaticQuery(graphql`
@@ -50,7 +51,9 @@ function LandingPage() {
               marginTop : "20px"
             }}
           >
-            Contact Us
+            <AnchorLink id="contactUsButton" href="#contact" style={{ color: "white" }}>
+              Contact Us
+            </AnchorLink>
           </button>
         </div>
       </div>
